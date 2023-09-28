@@ -41,7 +41,7 @@ header .container {
   display: grid;
   align-items: center;
   grid-template-columns: 1fr auto;
-  grid-template-areas: "logo bars" "logo login";
+  grid-template-areas: "logo bars" "logo menu";
 }
 header .container .btn-menubars {
   grid-area: bars;
@@ -59,15 +59,56 @@ header .container .logotype {
 }
 header .container .contactinformation-bar {
   grid-area: cib;
+  align-items: center;
   display: none;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
 }
 header .container .socialmedia-bar {
   grid-area: social;
+  align-items: center;
   display: none;
 }
-header .container .mainmenu {
+header .container .socialmedia-bar a {
+  color: #191919;
+  font-size: 1.3rem;
+  margin-left: 12px;
+}
+header .container .socialmedia-bar a:hover {
+  color: #7c7c7c;
+}
+header .container .menu {
   grid-area: menu;
+  align-items: center;
+  justify-content: space-between;
   display: none;
+  margin-left: 30px;
+  border-top: 1px solid #DAD9D3;
+}
+header .container .menu .menubar {
+  font-size: 15px;
+  font-weight: 400;
+  display: none;
+}
+header .container .menu .menubar a {
+  color: #191919;
+  text-decoration: none;
+  position: relative;
+}
+header .container .menu .menubar a.active {
+  font-weight: 500;
+}
+header .container .menu .menubar a.active::after, header .container .menu .menubar a:hover::after {
+  content: "";
+  position: absolute;
+  font-weight: 500;
+  height: 2px;
+  width: 15px;
+  background-color: #191919;
+  left: 50%;
+  bottom: -3px;
+  transform: translate(calc(50% - 15px));
 }
 header .container .login {
   grid-area: login;
@@ -75,15 +116,13 @@ header .container .login {
 @media (min-width: 992px) {
   header .container {
     grid-template-columns: auto 1fr auto;
-    grid-template-areas: "logo cib social" "logo menu login";
+    grid-template-areas: "logo cib social" "logo menu menu";
   }
   header .container .contactinformation-bar {
     display: flex;
-    margin-left: 12px;
     align-items: center;
-    font-family: "Inter", sans-serif;
-    font-size: 15;
-    font-weight: 300;
+    padding-top: 15px;
+    margin-left: 12px;
   }
   header .container .contactinformation-bar .contact-box {
     border-right: 1px solid #DAD9D3;
@@ -93,7 +132,6 @@ header .container .login {
   header .container .contactinformation-bar .contact-box i {
     margin-right: 5px;
     font-size: 1.2em;
-    color: #666666;
   }
   header .container .contactinformation-bar .contact-box.last {
     border: none;
@@ -106,9 +144,17 @@ header .container .login {
 }
 @media (min-width: 992px) {
   header .container .socialmedia-bar {
-    display: block;
+    display: flex;
+    align-items: center;
   }
-  header .container .mainmenu {
-    display: block;
+  header .container .menu {
+    align-items: center;
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 5px;
+  }
+  header .container .menu .menubar {
+    display: flex;
+    gap: 35px;
   }
 }/*# sourceMappingURL=style.css.map */
