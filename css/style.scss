@@ -1,1 +1,128 @@
 //Mobile design
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap');
+
+html,body {
+    color: #191919;
+    font-family: 'Inter', sans-serif;
+    font-size: 16;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.wrapper-grid {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto  1fr auto;
+}
+
+.btn-yellow {
+    background-color: #F9D783;
+    border: 1px solid #F9D783;
+    color: #191919;
+    text-decoration: none;
+    padding: 12px 25px 11px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 600;
+
+    i {
+        margin-left: 8px;
+        font-size: 0.9em;
+    }
+
+    &:hover {
+        background-color: #191919;
+        border: 1px solid #191919;
+        color: #F0EFE9;
+    }
+}
+
+header {
+    background-color: #F0EFE9;
+
+    .container {
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr auto;
+        grid-template-areas: "logo bars"
+                             "logo login";
+
+        .btn-menubars{
+            grid-area: bars;
+            border: none;
+            font-size: 25px;
+            background-color: transparent;
+
+            @media (min-width: 992px) {
+                display: none;
+            }
+        }
+        .logotype{
+            grid-area: logo;
+        }
+        .contactinformation-bar{
+            grid-area: cib;
+            display: none;
+        }
+        .socialmedia-bar{
+            grid-area: social;
+            display: none;
+        }
+        .mainmenu{
+            grid-area: menu;
+            display: none;
+        }
+
+        .login{
+            grid-area: login;
+        }
+
+        @media (min-width: 992px){
+            grid-template-columns: auto 1fr auto;
+            grid-template-areas: "logo cib social"
+                                 "logo menu login";
+
+            .contactinformation-bar {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-family: 'Inter', sans-serif;
+                font-size: 15;
+                font-weight: 300;
+
+                .contact-box {
+                    border-right: 1px solid #DAD9D3;
+                    padding-right: 40px; 
+
+                    i {
+                        margin-right: 5px;
+                        font-size: 1.2em;
+                        color: #666666
+                    }
+
+                    &.last {
+                        border: none;
+
+                        @media (max-width: 1200px) {
+                            display: none;
+                        }
+                    }
+                }
+            }
+            .socialmedia-bar {
+                display: block;
+            }
+            .mainmenu{
+                display: block;
+            }
+
+        }
+    }
+}
+
+//Tablet 768px (720px) design
+
+//Laptop design 1200px (1140px)?
+       
+//Bigscreen design 1400px(1320px)
