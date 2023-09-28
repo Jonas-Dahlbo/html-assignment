@@ -79,7 +79,7 @@ header .container .login {
   }
   header .container .contactinformation-bar {
     display: flex;
-    justify-content: space-between;
+    margin-left: 12px;
     align-items: center;
     font-family: "Inter", sans-serif;
     font-size: 15;
@@ -88,6 +88,7 @@ header .container .login {
   header .container .contactinformation-bar .contact-box {
     border-right: 1px solid #DAD9D3;
     padding-right: 40px;
+    padding-left: 20px;
   }
   header .container .contactinformation-bar .contact-box i {
     margin-right: 5px;
