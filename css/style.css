@@ -187,12 +187,21 @@ header .container .login {
 }
 .showcase .wavy-lines {
   position: absolute;
+  width: 60%;
+  height: auto;
   left: 0;
   bottom: 0;
   z-index: -1;
 }
+@media (min-width: 992px) {
+  .showcase .wavy-lines {
+    width: 40%;
+    height: auto;
+  }
+}
 .showcase .container {
   display: block;
+  margin-top: 100px;
 }
 .showcase .container .content {
   margin-left: 50px;
@@ -231,9 +240,10 @@ header .container .login {
     margin-left: 0;
     margin-right: 50px;
     margin-top: 10px;
+    padding-bottom: 120px;
   }
   .showcase .container .content h1 {
-    line-height: 1;
+    line-height: 1.2;
     padding-bottom: 10px;
   }
   .showcase .container .content p {
@@ -251,7 +261,7 @@ header .container .login {
 }
 @media (min-width: 1400px) {
   .showcase .container .content h1 {
-    font-size: 86px;
+    font-size: 90px;
   }
 }
 .showcase .container img {
@@ -278,7 +288,31 @@ header .container .login {
     gap: 25px;
   }
   .showcase .container img {
-    width: 100%;
-    height: auto;
+    all: initial;
+    margin-right: -40px;
+  }
+}
+
+.partners .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  padding-top: 30px;
+  padding-right: 0px;
+}
+.partners .container .partner img {
+  width: 100%;
+  height: auto;
+}
+@media (min-width: 992px) {
+  .partners .container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+  }
+}
+@media (min-width: 992px) and (min-width: 1200px) {
+  .partners .container .partner img {
+    all: initial;
   }
 }/*# sourceMappingURL=style.css.map */

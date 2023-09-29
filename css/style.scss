@@ -200,6 +200,8 @@ header {
     }
 }
 
+
+// Might want to adjust wavy line to fixed sizes
 .showcase {
     background-color: #F0EFE9;
     position: relative;
@@ -207,13 +209,21 @@ header {
     
     .wavy-lines {
         position: absolute;
+        width: 60%;
+        height: auto;
         left: 0;
         bottom: 0;
         z-index: -1;
+
+        @media (min-width: 992px){
+            width: 40%;
+            height: auto;
+        }
     }
 
     .container {
         display: block;
+        margin-top: 100px;
 
         .content {
             margin-left: 50px;
@@ -262,9 +272,10 @@ header {
                 margin-left: 0;
                 margin-right: 50px;
                 margin-top: 10px;
+                padding-bottom: 120px;
 
                 h1 {
-                    line-height: 1;
+                    line-height: 1.2;
                     padding-bottom: 10px;
                 }
 
@@ -286,7 +297,7 @@ header {
             @media (min-width: 1400px){
                 
                 h1{
-                    font-size: 86px;
+                    font-size: 90px;
                 }
             }
         }
@@ -318,8 +329,42 @@ header {
             }
 
             img {
+                all: initial;
+                margin-right: -40px;
+            }
+        }
+    }
+}
+
+.partners {
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        padding-top: 30px;
+        padding-right: 0px;
+
+        .partner {
+            img {
                 width: 100%;
                 height: auto;
+            }
+        }
+    }
+
+    @media (min-width: 992px) {
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 60px;
+
+            @media (min-width: 1200px) {
+                .partner {
+                    img {
+                        all:initial;
+                    }
+                }
             }
         }
     }
