@@ -3,7 +3,7 @@
 html, body {
   color: #191919;
   font-family: "Inter", sans-serif;
-  font-size: 16;
+  font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
 }
@@ -201,7 +201,6 @@ header .container .login {
 }
 .showcase .container {
   display: block;
-  margin-top: 100px;
 }
 .showcase .container .content {
   margin-left: 50px;
@@ -314,5 +313,52 @@ header .container .login {
 @media (min-width: 992px) and (min-width: 1200px) {
   .partners .container .partner img {
     all: initial;
+  }
+}
+
+.features .container {
+  display: block;
+  padding-top: 20px;
+  align-items: center;
+}
+.features .container .features-title p {
+  color: #F94D1C;
+  font-family: "Inter", sans-serif;
+  font-size: 14;
+  font-weight: 500;
+}
+.features .container .features-title h2 {
+  padding-bottom: 20px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+}
+.features .container .features-title a {
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.features .container .features-box {
+  margin-left: 15px;
+}
+.features .container .features-box .feature-article {
+  text-decoration: none;
+  color: #191919;
+}
+.features .container .features-box .feature-article h3 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+.features .container .features-box .feature-article p {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+@media (min-width: 992px) {
+  .features .container {
+    display: flex;
   }
 }/*# sourceMappingURL=style.css.map */
