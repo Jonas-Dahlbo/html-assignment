@@ -10,6 +10,13 @@ html,body {
     line-height: 1.5;
 }
 
+.container {
+    padding-left: 30px;
+
+    @media (min-width: 992px) {
+        padding-left: 90px;
+    }
+}
 .wrapper-grid {
     height: 100vh;
     display: grid;
@@ -199,8 +206,6 @@ header {
         }
     }
 }
-
-
 // Might want to adjust wavy line to fixed sizes
 .showcase {
     background-color: #F0EFE9;
@@ -225,8 +230,6 @@ header {
         display: block;
 
         .content {
-            margin-left: 50px;
-            margin-right: 50px;
 
             h1 {
                 font-family: 'DM Sans', sans-serif;
@@ -242,6 +245,8 @@ header {
             }
 
             .showcase-btns {
+                margin-left: 50px;
+                margin-right: 50px;
                 a {
                     display: block;
                     text-align: center;
@@ -269,7 +274,7 @@ header {
 
             @media (min-width: 992px) {
                 margin-left: 0;
-                margin-right: 50px;
+                margin-right: -10px;
                 margin-top: 10px;
                 padding-bottom: 120px;
 
@@ -281,6 +286,7 @@ header {
                 p {
                     padding-bottom: 20px;
                 }
+                
                 .showcase-btns{
                     display: flex;
                     gap: 25px;
@@ -296,7 +302,7 @@ header {
             @media (min-width: 1400px){
                 
                 h1{
-                    font-size: 90px;
+                    font-size: 85px;
                 }
             }
         }
@@ -329,6 +335,7 @@ header {
 
             img {
                 all: initial;
+                margin-left: 20px;
                 margin-right: -40px;
             }
         }
@@ -357,6 +364,8 @@ header {
             display: flex;
             justify-content: space-between;
             padding-top: 60px;
+            margin-top: 20px;
+            margin-bottom: 100px;
 
             @media (min-width: 1200px) {
                 .partner {
@@ -368,15 +377,18 @@ header {
         }
     }
 }
+
+//needs more space to the right while keeping the print on H2
 .features {
 
     .container {
         display: block;
         padding-top: 20px;
         align-items: center;
+        border: 1px solid #CFCFCF;
 
         .features-title {
-
+            
             p {
                 color: #F94D1C;
                 font-family: 'Inter', sans-serif;
@@ -395,11 +407,37 @@ header {
                 display: block;
                 text-align: center;
                 margin-bottom: 20px;
+                margin-right: 50px;
+            }
+
+            @media (min-width: 992px) {
+                margin-right: 100px;
+
+                p {
+                    font-size: 18px;
+                    margin-bottom: 15px;
+                }
+
+                h2 {
+                    font-size: 35px;  
+                    margin-bottom: 22px;
+                }
+
+                a {
+                    margin-bottom: 200px;
+                }
+            }
+
+            @media (min-width: 1200px) {
+
+                h2 {
+                    font-size: 45px;
+                    margin-right: 90px;
+                }
             }
         }
 
         .features-box {
-            margin-left: 15px;
 
             .feature-article {
                 text-decoration: none;
@@ -419,10 +457,36 @@ header {
                         margin-bottom: 20px;
                     }
             }
+            
+            @media (min-width: 992px) {
+                .feature-article {
+                    margin-bottom: 40px;
+                    margin-right: 100px;
+
+                    h3 {
+                        margin-top: 30px;
+                        margin-bottom: 20px;
+                        font-size: 22px;
+                    }
+                    
+                }
+            }
         }
 
         @media (min-width: 992px) {
             display: flex;
+
+            .features-title {
+                flex: 1;
+                margin-top: 70px
+            }
+
+            .features-box {
+                flex: 1.2; //size compared to .features-title
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                margin-top: 75px;
+            }
         }
     }
 }

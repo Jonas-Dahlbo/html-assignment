@@ -8,6 +8,15 @@ html, body {
   line-height: 1.5;
 }
 
+.container {
+  padding-left: 30px;
+}
+@media (min-width: 992px) {
+  .container {
+    padding-left: 90px;
+  }
+}
+
 .wrapper-grid {
   height: 100vh;
   display: grid;
@@ -202,10 +211,6 @@ header .container .login {
 .showcase .container {
   display: block;
 }
-.showcase .container .content {
-  margin-left: 50px;
-  margin-right: 50px;
-}
 .showcase .container .content h1 {
   font-family: "DM Sans", sans-serif;
   font-weight: 700;
@@ -216,6 +221,10 @@ header .container .login {
   font-weight: 400;
   font-size: 14px;
   color: #595856;
+}
+.showcase .container .content .showcase-btns {
+  margin-left: 50px;
+  margin-right: 50px;
 }
 .showcase .container .content .showcase-btns a {
   display: block;
@@ -237,7 +246,7 @@ header .container .login {
 @media (min-width: 992px) {
   .showcase .container .content {
     margin-left: 0;
-    margin-right: 50px;
+    margin-right: -10px;
     margin-top: 10px;
     padding-bottom: 120px;
   }
@@ -260,7 +269,7 @@ header .container .login {
 }
 @media (min-width: 1400px) {
   .showcase .container .content h1 {
-    font-size: 90px;
+    font-size: 85px;
   }
 }
 .showcase .container img {
@@ -288,6 +297,7 @@ header .container .login {
   }
   .showcase .container img {
     all: initial;
+    margin-left: 20px;
     margin-right: -40px;
   }
 }
@@ -308,6 +318,8 @@ header .container .login {
     display: flex;
     justify-content: space-between;
     padding-top: 60px;
+    margin-top: 20px;
+    margin-bottom: 100px;
   }
 }
 @media (min-width: 992px) and (min-width: 1200px) {
@@ -320,6 +332,7 @@ header .container .login {
   display: block;
   padding-top: 20px;
   align-items: center;
+  border: 1px solid #CFCFCF;
 }
 .features .container .features-title p {
   color: #F94D1C;
@@ -337,9 +350,29 @@ header .container .login {
   display: block;
   text-align: center;
   margin-bottom: 20px;
+  margin-right: 50px;
 }
-.features .container .features-box {
-  margin-left: 15px;
+@media (min-width: 992px) {
+  .features .container .features-title {
+    margin-right: 100px;
+  }
+  .features .container .features-title p {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  .features .container .features-title h2 {
+    font-size: 35px;
+    margin-bottom: 22px;
+  }
+  .features .container .features-title a {
+    margin-bottom: 200px;
+  }
+}
+@media (min-width: 1200px) {
+  .features .container .features-title h2 {
+    font-size: 45px;
+    margin-right: 90px;
+  }
 }
 .features .container .features-box .feature-article {
   text-decoration: none;
@@ -358,7 +391,28 @@ header .container .login {
   margin-bottom: 20px;
 }
 @media (min-width: 992px) {
+  .features .container .features-box .feature-article {
+    margin-bottom: 40px;
+    margin-right: 100px;
+  }
+  .features .container .features-box .feature-article h3 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 22px;
+  }
+}
+@media (min-width: 992px) {
   .features .container {
     display: flex;
+  }
+  .features .container .features-title {
+    flex: 1;
+    margin-top: 70px;
+  }
+  .features .container .features-box {
+    flex: 1.2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 75px;
   }
 }/*# sourceMappingURL=style.css.map */
