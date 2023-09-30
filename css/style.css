@@ -24,6 +24,34 @@ html, body {
   grid-template-rows: auto 1fr auto;
 }
 
+.section-title p {
+  color: #F94D1C;
+  font-family: "Inter", sans-serif;
+  font-size: 14;
+  font-weight: 500;
+}
+.section-title h2 {
+  padding-bottom: 20px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+}
+@media (min-width: 992px) {
+  .section-title p {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  .section-title h2 {
+    font-size: 35px;
+    margin-bottom: 22px;
+  }
+}
+@media (min-width: 1200px) {
+  .section-title h2 {
+    font-size: 45px;
+  }
+}
+
 .btn-yellow {
   background-color: #F9D783;
   border: 1px solid #F9D783;
@@ -334,43 +362,22 @@ header .container .login {
   align-items: center;
   border: 1px solid #CFCFCF;
 }
-.features .container .features-title p {
-  color: #F94D1C;
-  font-family: "Inter", sans-serif;
-  font-size: 14;
-  font-weight: 500;
-}
-.features .container .features-title h2 {
-  padding-bottom: 20px;
-  font-family: "DM Sans", sans-serif;
-  font-size: 26px;
-  font-weight: 700;
-}
-.features .container .features-title a {
+.features .container .section-title a {
   display: block;
   text-align: center;
   margin-bottom: 20px;
   margin-right: 50px;
 }
 @media (min-width: 992px) {
-  .features .container .features-title {
+  .features .container .section-title {
     margin-right: 100px;
   }
-  .features .container .features-title p {
-    font-size: 18px;
-    margin-bottom: 15px;
-  }
-  .features .container .features-title h2 {
-    font-size: 35px;
-    margin-bottom: 22px;
-  }
-  .features .container .features-title a {
+  .features .container .section-title a {
     margin-bottom: 200px;
   }
 }
 @media (min-width: 1200px) {
-  .features .container .features-title h2 {
-    font-size: 45px;
+  .features .container .section-title h2 {
     margin-right: 90px;
   }
 }
@@ -405,7 +412,7 @@ header .container .login {
   .features .container {
     display: flex;
   }
-  .features .container .features-title {
+  .features .container .section-title {
     flex: 1;
     margin-top: 70px;
   }

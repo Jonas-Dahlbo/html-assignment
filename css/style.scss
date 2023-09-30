@@ -17,11 +17,49 @@ html,body {
         padding-left: 90px;
     }
 }
+
 .wrapper-grid {
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto  1fr auto;
+}
+
+.section-title {
+            
+    p {
+        color: #F94D1C;
+        font-family: 'Inter', sans-serif;
+        font-size: 14;
+        font-weight: 500;
+    }
+
+    h2 {
+        padding-bottom: 20px;
+        font-family: 'DM Sans', sans-serif;
+        font-size: 26px;
+        font-weight: 700;
+    }
+
+    @media (min-width: 992px) {
+
+        p {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        h2 {
+            font-size: 35px;  
+            margin-bottom: 22px;
+        }
+    }
+
+    @media (min-width: 1200px) {
+
+        h2 {
+            font-size: 45px;
+        }
+    }
 }
 
 .btn-yellow {
@@ -387,21 +425,7 @@ header {
         align-items: center;
         border: 1px solid #CFCFCF;
 
-        .features-title {
-            
-            p {
-                color: #F94D1C;
-                font-family: 'Inter', sans-serif;
-                font-size: 14;
-                font-weight: 500;
-            }
-
-            h2 {
-                padding-bottom: 20px;
-                font-family: 'DM Sans', sans-serif;
-                font-size: 26px;
-                font-weight: 700;
-            }
+        .section-title {
 
             a {
                 display: block;
@@ -413,25 +437,15 @@ header {
             @media (min-width: 992px) {
                 margin-right: 100px;
 
-                p {
-                    font-size: 18px;
-                    margin-bottom: 15px;
-                }
-
-                h2 {
-                    font-size: 35px;  
-                    margin-bottom: 22px;
-                }
-
                 a {
                     margin-bottom: 200px;
                 }
-            }
 
+            }
+            
             @media (min-width: 1200px) {
 
                 h2 {
-                    font-size: 45px;
                     margin-right: 90px;
                 }
             }
@@ -476,13 +490,13 @@ header {
         @media (min-width: 992px) {
             display: flex;
 
-            .features-title {
+            .section-title {
                 flex: 1;
                 margin-top: 70px
             }
 
             .features-box {
-                flex: 1.2; //size compared to .features-title
+                flex: 1.2; //size compared to .section-title
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 margin-top: 75px;
