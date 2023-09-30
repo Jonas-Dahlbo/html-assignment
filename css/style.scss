@@ -459,7 +459,6 @@ header {
     }
 }
 
-// Needs more space to the right while keeping the print on H2
 .features {
 
     .container {
@@ -508,6 +507,7 @@ header {
                 }
 
                 p {
+                    color: #5E5E5E;
                     font-family: 'Inter', sans-serif;
                     font-size: 14px;
                     font-weight: 400;
@@ -601,7 +601,7 @@ header {
             align-items: center;
 
             .company-paragraph {
-                color: #191919;
+                color: #5E5E5E;
                 font-size: 14px;
                 font-weight: 400;
                 padding-bottom: 20px;
@@ -692,6 +692,40 @@ header {
     }
 }
 
+// Try adding img at 768 px
+.why-us {
+    
+    .container {
+        display: block;
+        align-items: center;
+
+        .section-title {
+            align-items: center;
+            
+            .work-methodology {
+                color: #191919;
+                text-decoration: none;
+                display: flex;
+                gap: 20px;
+
+                h3 {
+                    margin-top: 20px;
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    color: #5E5E5E;
+                    margin-bottom: 20px;
+                }
+            }
+
+        }
+
+        .image-box {
+            display: none;
+        }
+    }
+}
 //Tablet 768px (720px) design
 
 //Laptop design 1200px (1140px)?

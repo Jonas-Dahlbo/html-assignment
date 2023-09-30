@@ -426,6 +426,7 @@ header .container .login {
   margin-top: 10px;
 }
 .features .container .features-box .feature-article p {
+  color: #5E5E5E;
   font-family: "Inter", sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -503,7 +504,7 @@ header .container .login {
   align-items: center;
 }
 .about .container .section-title .company-paragraph {
-  color: #191919;
+  color: #5E5E5E;
   font-size: 14px;
   font-weight: 400;
   padding-bottom: 20px;
@@ -572,4 +573,29 @@ header .container .login {
   .about .container .section-title .aboutcompany-btns .video-btn a img {
     margin-right: 20px;
   }
+}
+
+.why-us .container {
+  display: block;
+  align-items: center;
+}
+.why-us .container .section-title {
+  align-items: center;
+}
+.why-us .container .section-title .work-methodology {
+  color: #191919;
+  text-decoration: none;
+  display: flex;
+  gap: 20px;
+}
+.why-us .container .section-title .work-methodology h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.why-us .container .section-title .work-methodology p {
+  color: #5E5E5E;
+  margin-bottom: 20px;
+}
+.why-us .container .image-box {
+  display: none;
 }/*# sourceMappingURL=style.css.map */
