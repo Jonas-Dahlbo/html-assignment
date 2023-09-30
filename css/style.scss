@@ -5,7 +5,7 @@
 html,body {
     color: #191919;
     font-family: 'Inter', sans-serif;
-    font-size: 16px;
+    font-size: 16pt;
     font-weight: 400;
     line-height: 1.5;
 }
@@ -30,26 +30,26 @@ html,body {
     p {
         color: #F94D1C;
         font-family: 'Inter', sans-serif;
-        font-size: 14;
+        font-size: 14pt;
         font-weight: 500;
     }
 
     h2 {
         padding-bottom: 20px;
         font-family: 'DM Sans', sans-serif;
-        font-size: 26px;
+        font-size: 26pt;
         font-weight: 700;
     }
 
     @media (min-width: 992px) {
 
         p {
-            font-size: 18px;
+            font-size: 18pt;
             margin-bottom: 15px;
         }
 
         h2 {
-            font-size: 35px;  
+            font-size: 35pt;  
             margin-bottom: 22px;
         }
     }
@@ -57,7 +57,7 @@ html,body {
     @media (min-width: 1200px) {
 
         h2 {
-            font-size: 45px;
+            font-size: 45pt;
         }
     }
 }
@@ -69,7 +69,7 @@ html,body {
     text-decoration: none;
     padding: 12px 25px 11px;
     border-radius: 25px;
-    font-size: 16px;
+    font-size: 16pt;
     font-weight: 600;
 
     i {
@@ -91,7 +91,7 @@ html,body {
     text-decoration: none;
     padding: 12px 25px 11px;
     border-radius: 25px;
-    font-size: 16px;
+    font-size: 16pt;
     font-weight: 600;
 
     i {
@@ -103,6 +103,28 @@ html,body {
         background-color: #191919;
         border: 1px solid #191919;
         color: #F0EFE9;
+    }
+}
+
+.btn-black {
+    background-color: #191919;
+    border: 1px solid #191919;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 12px 25px 11px;
+    border-radius: 25px;
+    font-size: 16pt;
+    font-weight: 600;
+
+    i {
+        margin-left: 8px;
+        font-size: 0.9em;
+    }
+
+    &:hover {
+        background-color: #FFFFFF;
+        border: 1px solid #191919;
+        color: #191919;
     }
 }
 
@@ -119,7 +141,7 @@ header {
         .btn-menubars{
             grid-area: bars;
             border: none;
-            font-size: 25px;
+            font-size: 25pt;
             background-color: transparent;
 
             @media (min-width: 992px) {
@@ -134,7 +156,7 @@ header {
             align-items: center;
             display: none;
             font-family: 'Inter', sans-serif;
-            font-size: 15px;
+            font-size: 15pt;
             font-weight: 300;
         }
         .socialmedia-bar{
@@ -161,7 +183,7 @@ header {
             border-top: 1px solid #DAD9D3;
 
             .menubar {
-                font-size: 15px;
+                font-size: 15pt;
                 font-weight: 400;
                 display: none;
 
@@ -272,13 +294,13 @@ header {
             h1 {
                 font-family: 'DM Sans', sans-serif;
                 font-weight: 700;
-                font-size: 30px;
+                font-size: 30pt;
             }
 
             p {
                 font-family: 'Inter', sans-serif;
                 font-weight: 400;
-                font-size: 14px;
+                font-size: 14pt;
                 color: #595856;
             }
 
@@ -295,11 +317,11 @@ header {
             @media (min-width: 768px) {
                 
                 h1 {
-                    font-size: 60px;
+                    font-size: 60pt;
                 }
 
                 p {
-                    font-size: 20px;
+                    font-size: 20pt;
                 }
                 
                 .showcase-btns{
@@ -340,7 +362,7 @@ header {
             @media (min-width: 1400px){
                 
                 h1{
-                    font-size: 85px;
+                    font-size: 85pt;
                 }
             }
         }
@@ -459,14 +481,14 @@ header {
 
                     h3 {
                         font-family: 'DM Sans', sans-serif;
-                        font-size: 20px;
+                        font-size: 20pt;
                         font-weight: 700;
                         margin-top: 10px;
                     }
 
                     p {
                         font-family: 'Inter', sans-serif;
-                        font-size: 14px;
+                        font-size: 14pt;
                         font-weight: 400;
                         margin-bottom: 20px;
                     }
@@ -480,7 +502,7 @@ header {
                     h3 {
                         margin-top: 30px;
                         margin-bottom: 20px;
-                        font-size: 22px;
+                        font-size: 22pt;
                     }
                     
                 }
@@ -500,6 +522,137 @@ header {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 margin-top: 75px;
+            }
+        }
+    }
+}
+
+.about {
+    
+    .container {
+        align-items: center;
+        padding-left: 0;
+        padding-top: 20px;
+
+        .founder {
+            position: relative;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+
+            .bluebox {
+                position: absolute;
+                margin-left: 10px;
+                bottom: 10%;
+                background-color: #BEEBFF;
+                border: 1px solid #85C5F8;
+                width: 70%;
+                height: auto;
+
+                h4 {
+                    color: #191919;
+                    font-family: 'DM Sans', sans-serif;
+                    font-size: 16pt;
+                    font-weight: 700;
+                }
+
+                span {
+                    color: #F94D1C; 
+                    font-size: 12pt;
+                    font-weight: 700;
+                }
+
+                p {
+                    font-family: 'Inter', sans-serif;
+                    font-style: italic;
+                    font-size: 12pt;
+                    font-weight: 500;
+                }
+            }
+        }
+
+        .section-title {
+            margin-top: 20px;
+            padding-left: 30px;
+            padding-bottom: 30px;
+            align-items: center;
+
+            .company-paragraph{
+                color: #191919;
+                font-size: 12pt;
+                font-weight: 400;
+            }
+
+            .btn-black {
+                margin-right: 10px;
+                display: block;
+                align-items: center;
+                text-align: center;
+            }
+            .video-btn {
+                display: flex;
+                justify-content: space-around;
+                margin-top: 20px;
+
+                a {
+                    font-size: 16pt;
+                    margin-right: 10px;
+                    color: #191919;
+                    text-decoration: none;
+                }
+                
+            }
+        }
+
+        @media (min-width: 992px) {
+            display: flex;
+            align-items: center;
+
+            .founder {
+                margin-right: 150px;
+
+                img {
+                    all: initial;
+                }
+
+                .bluebox {
+                    width: 60%;
+                    bottom: 7%;
+                    padding: 30px 30px 40px 20px;
+                }
+            }
+
+            .section-title {
+                margin-bottom: 175px;
+
+                p {
+                    padding-bottom: 20px;
+                }
+
+                .company-paragraph {
+                    font-size: 16pt;
+                }
+                
+                .aboutcompany-btns {
+                    margin-top: 50px;
+                    
+                    .btn-black {
+                        display: inline;
+                        margin-right: 40px;
+                    }
+    
+                    .video-btn {
+                        display: inline;
+                        
+                        a {
+                            img {
+                                margin-right: 20px;
+                            }
+                         }
+                    }
+                }
             }
         }
     }

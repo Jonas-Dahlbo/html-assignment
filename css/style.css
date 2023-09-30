@@ -3,7 +3,7 @@
 html, body {
   color: #191919;
   font-family: "Inter", sans-serif;
-  font-size: 16px;
+  font-size: 16pt;
   font-weight: 400;
   line-height: 1.5;
 }
@@ -27,28 +27,28 @@ html, body {
 .section-title p {
   color: #F94D1C;
   font-family: "Inter", sans-serif;
-  font-size: 14;
+  font-size: 14pt;
   font-weight: 500;
 }
 .section-title h2 {
   padding-bottom: 20px;
   font-family: "DM Sans", sans-serif;
-  font-size: 26px;
+  font-size: 26pt;
   font-weight: 700;
 }
 @media (min-width: 992px) {
   .section-title p {
-    font-size: 18px;
+    font-size: 18pt;
     margin-bottom: 15px;
   }
   .section-title h2 {
-    font-size: 35px;
+    font-size: 35pt;
     margin-bottom: 22px;
   }
 }
 @media (min-width: 1200px) {
   .section-title h2 {
-    font-size: 45px;
+    font-size: 45pt;
   }
 }
 
@@ -59,7 +59,7 @@ html, body {
   text-decoration: none;
   padding: 12px 25px 11px;
   border-radius: 25px;
-  font-size: 16px;
+  font-size: 16pt;
   font-weight: 600;
 }
 .btn-yellow i {
@@ -79,7 +79,7 @@ html, body {
   text-decoration: none;
   padding: 12px 25px 11px;
   border-radius: 25px;
-  font-size: 16px;
+  font-size: 16pt;
   font-weight: 600;
 }
 .btn-transparent i {
@@ -90,6 +90,26 @@ html, body {
   background-color: #191919;
   border: 1px solid #191919;
   color: #F0EFE9;
+}
+
+.btn-black {
+  background-color: #191919;
+  border: 1px solid #191919;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 12px 25px 11px;
+  border-radius: 25px;
+  font-size: 16pt;
+  font-weight: 600;
+}
+.btn-black i {
+  margin-left: 8px;
+  font-size: 0.9em;
+}
+.btn-black:hover {
+  background-color: #FFFFFF;
+  border: 1px solid #191919;
+  color: #191919;
 }
 
 header {
@@ -104,7 +124,7 @@ header .container {
 header .container .btn-menubars {
   grid-area: bars;
   border: none;
-  font-size: 25px;
+  font-size: 25pt;
   background-color: transparent;
 }
 @media (min-width: 992px) {
@@ -120,7 +140,7 @@ header .container .contactinformation-bar {
   align-items: center;
   display: none;
   font-family: "Inter", sans-serif;
-  font-size: 15px;
+  font-size: 15pt;
   font-weight: 300;
 }
 header .container .socialmedia-bar {
@@ -145,7 +165,7 @@ header .container .menu {
   border-top: 1px solid #DAD9D3;
 }
 header .container .menu .menubar {
-  font-size: 15px;
+  font-size: 15pt;
   font-weight: 400;
   display: none;
 }
@@ -242,12 +262,12 @@ header .container .login {
 .showcase .container .content h1 {
   font-family: "DM Sans", sans-serif;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 30pt;
 }
 .showcase .container .content p {
   font-family: "Inter", sans-serif;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 14pt;
   color: #595856;
 }
 .showcase .container .content .showcase-btns {
@@ -261,10 +281,10 @@ header .container .login {
 }
 @media (min-width: 768px) {
   .showcase .container .content h1 {
-    font-size: 60px;
+    font-size: 60pt;
   }
   .showcase .container .content p {
-    font-size: 20px;
+    font-size: 20pt;
   }
   .showcase .container .content .showcase-btns a {
     margin-left: 100px;
@@ -297,7 +317,7 @@ header .container .login {
 }
 @media (min-width: 1400px) {
   .showcase .container .content h1 {
-    font-size: 85px;
+    font-size: 85pt;
   }
 }
 .showcase .container img {
@@ -387,13 +407,13 @@ header .container .login {
 }
 .features .container .features-box .feature-article h3 {
   font-family: "DM Sans", sans-serif;
-  font-size: 20px;
+  font-size: 20pt;
   font-weight: 700;
   margin-top: 10px;
 }
 .features .container .features-box .feature-article p {
   font-family: "Inter", sans-serif;
-  font-size: 14px;
+  font-size: 14pt;
   font-weight: 400;
   margin-bottom: 20px;
 }
@@ -405,7 +425,7 @@ header .container .login {
   .features .container .features-box .feature-article h3 {
     margin-top: 30px;
     margin-bottom: 20px;
-    font-size: 22px;
+    font-size: 22pt;
   }
 }
 @media (min-width: 992px) {
@@ -421,5 +441,111 @@ header .container .login {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-top: 75px;
+  }
+}
+
+.about .container {
+  align-items: center;
+  padding-left: 0;
+  padding-top: 20px;
+}
+.about .container .founder {
+  position: relative;
+}
+.about .container .founder img {
+  width: 100%;
+  height: auto;
+}
+.about .container .founder .bluebox {
+  position: absolute;
+  margin-left: 10px;
+  bottom: 10%;
+  background-color: #BEEBFF;
+  border: 1px solid #85C5F8;
+  width: 70%;
+  height: auto;
+}
+.about .container .founder .bluebox h4 {
+  color: #191919;
+  font-family: "DM Sans", sans-serif;
+  font-size: 16pt;
+  font-weight: 700;
+}
+.about .container .founder .bluebox span {
+  color: #F94D1C;
+  font-size: 12pt;
+  font-weight: 700;
+}
+.about .container .founder .bluebox p {
+  font-family: "Inter", sans-serif;
+  font-style: italic;
+  font-size: 12pt;
+  font-weight: 500;
+}
+.about .container .section-title {
+  margin-top: 20px;
+  padding-left: 30px;
+  padding-bottom: 30px;
+  align-items: center;
+}
+.about .container .section-title .company-paragraph {
+  color: #191919;
+  font-size: 12pt;
+  font-weight: 400;
+}
+.about .container .section-title .btn-black {
+  margin-right: 10px;
+  display: block;
+  align-items: center;
+  text-align: center;
+}
+.about .container .section-title .video-btn {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+.about .container .section-title .video-btn a {
+  font-size: 16pt;
+  margin-right: 10px;
+  color: #191919;
+  text-decoration: none;
+}
+@media (min-width: 992px) {
+  .about .container {
+    display: flex;
+    align-items: center;
+  }
+  .about .container .founder {
+    margin-right: 150px;
+  }
+  .about .container .founder img {
+    all: initial;
+  }
+  .about .container .founder .bluebox {
+    width: 60%;
+    bottom: 7%;
+    padding: 30px 30px 40px 20px;
+  }
+  .about .container .section-title {
+    margin-bottom: 175px;
+  }
+  .about .container .section-title p {
+    padding-bottom: 20px;
+  }
+  .about .container .section-title .company-paragraph {
+    font-size: 16pt;
+  }
+  .about .container .section-title .aboutcompany-btns {
+    margin-top: 50px;
+  }
+  .about .container .section-title .aboutcompany-btns .btn-black {
+    display: inline;
+    margin-right: 40px;
+  }
+  .about .container .section-title .aboutcompany-btns .video-btn {
+    display: inline;
+  }
+  .about .container .section-title .aboutcompany-btns .video-btn a img {
+    margin-right: 20px;
   }
 }/*# sourceMappingURL=style.css.map */
