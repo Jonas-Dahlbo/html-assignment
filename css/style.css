@@ -1,11 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900&display=swap");
-html, body {
+html,
+body {
   color: #191919;
   font-family: "Inter", sans-serif;
-  font-size: 16pt;
+  font-size: 12px;
   font-weight: 400;
   line-height: 1.5;
+}
+@media (min-width: 1200px) {
+  html,
+  body {
+    font-size: 16px;
+  }
 }
 
 .container {
@@ -27,18 +34,18 @@ html, body {
 .section-title p {
   color: #F94D1C;
   font-family: "Inter", sans-serif;
-  font-size: 14pt;
+  font-size: 14px;
   font-weight: 500;
 }
 .section-title h2 {
   padding-bottom: 20px;
   font-family: "DM Sans", sans-serif;
-  font-size: 26pt;
+  font-size: 26px;
   font-weight: 700;
 }
 @media (min-width: 992px) {
   .section-title p {
-    font-size: 18pt;
+    font-size: 18px;
     margin-bottom: 15px;
   }
   .section-title h2 {
@@ -48,7 +55,7 @@ html, body {
 }
 @media (min-width: 1200px) {
   .section-title h2 {
-    font-size: 45pt;
+    font-size: 45px;
   }
 }
 
@@ -59,7 +66,7 @@ html, body {
   text-decoration: none;
   padding: 12px 25px 11px;
   border-radius: 25px;
-  font-size: 16pt;
+  font-size: 14px;
   font-weight: 600;
 }
 .btn-yellow i {
@@ -71,6 +78,11 @@ html, body {
   border: 1px solid #191919;
   color: #F0EFE9;
 }
+@media (min-width: 1200px) {
+  .btn-yellow {
+    font-size: 16px;
+  }
+}
 
 .btn-transparent {
   background-color: #F0EFE9;
@@ -79,7 +91,7 @@ html, body {
   text-decoration: none;
   padding: 12px 25px 11px;
   border-radius: 25px;
-  font-size: 16pt;
+  font-size: 16px;
   font-weight: 600;
 }
 .btn-transparent i {
@@ -99,7 +111,7 @@ html, body {
   text-decoration: none;
   padding: 12px 25px 11px;
   border-radius: 25px;
-  font-size: 16pt;
+  font-size: 16px;
   font-weight: 600;
 }
 .btn-black i {
@@ -124,7 +136,7 @@ header .container {
 header .container .btn-menubars {
   grid-area: bars;
   border: none;
-  font-size: 25pt;
+  font-size: 25px;
   background-color: transparent;
 }
 @media (min-width: 992px) {
@@ -140,7 +152,7 @@ header .container .contactinformation-bar {
   align-items: center;
   display: none;
   font-family: "Inter", sans-serif;
-  font-size: 15pt;
+  font-size: 15px;
   font-weight: 300;
 }
 header .container .socialmedia-bar {
@@ -150,7 +162,7 @@ header .container .socialmedia-bar {
 }
 header .container .socialmedia-bar a {
   color: #191919;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   margin-left: 12px;
 }
 header .container .socialmedia-bar a:hover {
@@ -165,7 +177,7 @@ header .container .menu {
   border-top: 1px solid #DAD9D3;
 }
 header .container .menu .menubar {
-  font-size: 15pt;
+  font-size: 15px;
   font-weight: 400;
   display: none;
 }
@@ -204,7 +216,7 @@ header .container .login {
   }
   header .container .contactinformation-bar .contact-box {
     border-right: 1px solid #DAD9D3;
-    padding-right: 40px;
+    padding-right: 10px;
     padding-left: 20px;
   }
   header .container .contactinformation-bar .contact-box i {
@@ -262,12 +274,12 @@ header .container .login {
 .showcase .container .content h1 {
   font-family: "DM Sans", sans-serif;
   font-weight: 700;
-  font-size: 30pt;
+  font-size: 30px;
 }
 .showcase .container .content p {
   font-family: "Inter", sans-serif;
   font-weight: 400;
-  font-size: 14pt;
+  font-size: 14px;
   color: #595856;
 }
 .showcase .container .content .showcase-btns {
@@ -281,10 +293,10 @@ header .container .login {
 }
 @media (min-width: 768px) {
   .showcase .container .content h1 {
-    font-size: 60pt;
+    font-size: 60px;
   }
   .showcase .container .content p {
-    font-size: 20pt;
+    font-size: 20px;
   }
   .showcase .container .content .showcase-btns a {
     margin-left: 100px;
@@ -309,6 +321,8 @@ header .container .login {
     display: flex;
     gap: 25px;
     padding-top: 10px;
+    margin-left: 0;
+    margin-right: 0;
   }
   .showcase .container .content .showcase-btns a {
     margin-left: 0;
@@ -317,7 +331,7 @@ header .container .login {
 }
 @media (min-width: 1400px) {
   .showcase .container .content h1 {
-    font-size: 85pt;
+    font-size: 85px;
   }
 }
 .showcase .container img {
@@ -407,13 +421,13 @@ header .container .login {
 }
 .features .container .features-box .feature-article h3 {
   font-family: "DM Sans", sans-serif;
-  font-size: 20pt;
+  font-size: 20px;
   font-weight: 700;
   margin-top: 10px;
 }
 .features .container .features-box .feature-article p {
   font-family: "Inter", sans-serif;
-  font-size: 14pt;
+  font-size: 14px;
   font-weight: 400;
   margin-bottom: 20px;
 }
@@ -425,7 +439,7 @@ header .container .login {
   .features .container .features-box .feature-article h3 {
     margin-top: 30px;
     margin-bottom: 20px;
-    font-size: 22pt;
+    font-size: 22px;
   }
 }
 @media (min-width: 992px) {
@@ -468,18 +482,18 @@ header .container .login {
 .about .container .founder .bluebox h4 {
   color: #191919;
   font-family: "DM Sans", sans-serif;
-  font-size: 16pt;
+  font-size: 16px;
   font-weight: 700;
 }
 .about .container .founder .bluebox span {
   color: #F94D1C;
-  font-size: 12pt;
+  font-size: 12px;
   font-weight: 700;
 }
 .about .container .founder .bluebox p {
   font-family: "Inter", sans-serif;
   font-style: italic;
-  font-size: 12pt;
+  font-size: 12px;
   font-weight: 500;
 }
 .about .container .section-title {
@@ -490,8 +504,9 @@ header .container .login {
 }
 .about .container .section-title .company-paragraph {
   color: #191919;
-  font-size: 12pt;
+  font-size: 14px;
   font-weight: 400;
+  padding-bottom: 20px;
 }
 .about .container .section-title .btn-black {
   margin-right: 10px;
@@ -505,18 +520,24 @@ header .container .login {
   margin-top: 20px;
 }
 .about .container .section-title .video-btn a {
-  font-size: 16pt;
+  font-size: 16px;
   margin-right: 10px;
   color: #191919;
   text-decoration: none;
 }
 @media (min-width: 992px) {
   .about .container {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
   }
   .about .container .founder {
-    margin-right: 150px;
+    padding-right: 70px;
+  }
+}
+@media (min-width: 992px) and (min-width: 1200px) {
+  .about .container .founder {
+    margin-right: 60px;
   }
   .about .container .founder img {
     all: initial;
@@ -527,16 +548,19 @@ header .container .login {
     padding: 30px 30px 40px 20px;
   }
   .about .container .section-title {
-    margin-bottom: 175px;
+    margin-bottom: 45px;
+  }
+  .about .container .section-title h2 {
+    margin-right: 0px;
   }
   .about .container .section-title p {
-    padding-bottom: 20px;
+    padding-bottom: 30px;
   }
   .about .container .section-title .company-paragraph {
-    font-size: 16pt;
+    font-size: 16px;
   }
   .about .container .section-title .aboutcompany-btns {
-    margin-top: 50px;
+    margin-top: 60px;
   }
   .about .container .section-title .aboutcompany-btns .btn-black {
     display: inline;
