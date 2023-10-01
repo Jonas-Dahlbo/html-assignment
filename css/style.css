@@ -738,6 +738,38 @@ header .container .login {
   text-align: center;
   width: 90%;
 }
+@media (min-width: 968px) {
+  .testimonial .container {
+    display: block;
+    align-items: center;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 70px;
+  }
+  .testimonial .container .reviews {
+    display: flex;
+    text-align: left;
+    padding-top: 80px;
+  }
+  .testimonial .container .reviews .review-box .rating {
+    padding-bottom: 20px;
+  }
+  .testimonial .container .reviews .review-box p {
+    padding-right: 80px;
+  }
+  .testimonial .container .reviews .review-box .reviewer {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 70px;
+  }
+  .testimonial .container .reviews .review-box .reviewer img {
+    padding-right: 20px;
+  }
+  .testimonial .container .center-btn a {
+    width: auto;
+  }
+}
 
 .newsletter {
   background-color: #F0EFE9;

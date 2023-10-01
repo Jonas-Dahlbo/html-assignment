@@ -872,7 +872,7 @@ header {
 
                 .reviewer {
                     margin-bottom: 5px;
-                    
+
                     img {
                         margin-bottom: 5px;
                     }
@@ -897,6 +897,49 @@ header {
             a {
                 text-align: center;
                 width: 90%;
+            }
+        }
+
+        @media (min-width: 968px) {
+            display: block;
+            align-items: center;
+            text-align: center;
+            padding-top: 100px ;
+            padding-bottom: 70px;
+
+            .reviews {
+                display: flex;
+                text-align: left;
+                padding-top: 80px;
+
+                .review-box {
+
+                    .rating {
+                        padding-bottom: 20px;
+                    }
+
+                    p {
+                        padding-right: 80px;
+                    }
+
+                    .reviewer {
+                        display: flex;
+                        align-items: center;
+                        padding-top: 20px;
+                        padding-bottom: 70px;
+                        
+                        img {
+                            padding-right: 20px;
+                        }
+                    }
+                }
+            }
+
+            .center-btn {
+
+                a {
+                    width: auto;
+                }
             }
         }
     }
