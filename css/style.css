@@ -124,6 +124,12 @@ body {
   color: #191919;
 }
 
+.center-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 header {
   background-color: #F0EFE9;
 }
@@ -687,9 +693,6 @@ header .container .login {
   text-decoration: underline;
 }
 .project-and-case .container .center-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin-top: 50px;
   margin-bottom: 60px;
 }
@@ -697,6 +700,43 @@ header .container .login {
   .project-and-case .container .center-btn {
     margin-bottom: 90px;
   }
+}
+
+.testimonial {
+  background-color: #F0D082;
+}
+.testimonial .container {
+  background-color: #FFFFFF;
+  align-items: center;
+}
+.testimonial .container .reviews .review-box .rating {
+  margin-bottom: 10px;
+}
+.testimonial .container .reviews .review-box p {
+  color: #5E5E5E;
+  font-style: italic;
+}
+.testimonial .container .reviews .review-box .reviewer {
+  margin-bottom: 5px;
+}
+.testimonial .container .reviews .review-box .reviewer img {
+  margin-bottom: 5px;
+}
+.testimonial .container .reviews .review-box .reviewer h3 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+}
+.testimonial .container .reviews .review-box .reviewer p {
+  color: #F94D1C;
+}
+.testimonial .container .center-btn {
+  margin-right: 20px;
+  padding-bottom: 20px;
+}
+.testimonial .container .center-btn a {
+  text-align: center;
+  width: 90%;
 }
 
 .newsletter {

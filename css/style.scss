@@ -137,6 +137,12 @@ body {
     }
 }
 
+.center-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 header {
     background-color: #F0EFE9;
 
@@ -834,9 +840,6 @@ header {
         }
 
         .center-btn {
-            display: flex;
-            justify-content: center;
-            align-items: center;
             margin-top: 50px;
             margin-bottom: 60px;
 
@@ -847,6 +850,57 @@ header {
     }
 }
 
+.testimonial {
+    background-color: #F0D082;
+
+    .container {
+        background-color: #FFFFFF;
+        align-items: center;
+        
+        .reviews {
+            
+            .review-box {
+
+                .rating {
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    color: #5E5E5E;
+                    font-style: italic;
+                }
+
+                .reviewer {
+                    margin-bottom: 5px;
+                    
+                    img {
+                        margin-bottom: 5px;
+                    }
+                    
+                    h3 {
+                        font-family: 'DM Sans', sans-serif;
+                        font-weight: 700;
+                        font-size: 22px;
+                    }
+
+                    p {
+                        color: #F94D1C;
+                    }
+                }
+            }
+        }
+
+        .center-btn {
+            margin-right: 20px;
+            padding-bottom: 20px;
+            
+            a {
+                text-align: center;
+                width: 90%;
+            }
+        }
+    }
+}
 // Subscribe button is broken at 992px->1400px
 .newsletter {
     background-color: #F0EFE9;
@@ -933,6 +987,7 @@ header {
         }
     }
 }
+
 //Tablet 768px (720px) design
 
 //Laptop design 1200px (1140px)?
