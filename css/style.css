@@ -550,6 +550,8 @@ header .container .login {
   }
   .about .container .section-title {
     margin-bottom: 45px;
+    margin-left: 35px;
+    margin-right: 20px;
   }
   .about .container .section-title h2 {
     margin-right: 0px;
@@ -747,7 +749,7 @@ header .container .login {
     display: flex;
     align-items: center;
     margin-top: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
   }
   .newsletter .container .section-title {
     margin-right: 80px;
