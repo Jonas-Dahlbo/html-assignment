@@ -576,10 +576,16 @@ header .container .login {
     margin-right: 40px;
   }
   .about .container .section-title .aboutcompany-btns .video-btn {
-    display: inline;
+    text-align: left;
+    justify-content: left;
   }
   .about .container .section-title .aboutcompany-btns .video-btn a img {
-    margin-right: 20px;
+    margin-right: 10px;
+  }
+}
+@media (min-width: 992px) and (min-width: 1200px) and (min-width: 1400px) {
+  .about .container .section-title .aboutcompany-btns .video-btn {
+    display: inline;
   }
 }
 
