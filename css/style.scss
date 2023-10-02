@@ -484,7 +484,7 @@ header {
 
             @media (min-width: 992px) {
                 margin-right: 100px;
-                
+
                 a {
                     margin-bottom: 200px;
                 }
@@ -714,15 +714,15 @@ header {
 .why-us {
     position: relative;
     z-index: 0;
-    
+
     .container {
         display: block;
         align-items: center;
-        
+
 
         .section-title {
             align-items: center;
-            
+
             .work-methodology {
                 color: #191919;
                 text-decoration: none;
@@ -747,14 +747,14 @@ header {
         }
 
         @media (min-width: 768px) {
-            
+
             .section-title {
-                
+
                 .work-methodology {
                     margin-right: 280px;
                     margin-left: 30px;
                 }
-            }    
+            }
         }
 
         @media (min-width: 992px) {
@@ -768,7 +768,7 @@ header {
                     margin-right: 20px;
                 }
 
-                
+
                 .work-methodology {
                     margin-right: 0;
                     margin-left: 0;
@@ -785,6 +785,7 @@ header {
                     width: 100%;
                     height: auto;
                 }
+
                 .grey-box {
                     position: absolute;
                     background-color: #F0EFE9;
@@ -796,7 +797,7 @@ header {
                 }
 
                 @media (min-width: 1400px) {
-                    
+
                     img {
                         all: initial;
                         margin-top: -100px;
@@ -814,7 +815,7 @@ header {
 
 .project-and-case {
     padding-top: 30px;
-    
+
     @media (min-width: 992px) {
         padding-top: 80px;
     }
@@ -855,7 +856,7 @@ header {
                     padding-bottom: 16px;
                     border-bottom: 1px solid #dad9d3;
                 }
-                
+
                 .read-more {
                     padding: 15px;
                     display: block;
@@ -894,9 +895,9 @@ header {
     .container {
         background-color: #FFFFFF;
         align-items: center;
-        
+
         .reviews {
-            
+
             .review-box {
 
                 .rating {
@@ -914,7 +915,7 @@ header {
                     img {
                         margin-bottom: 5px;
                     }
-                    
+
                     h3 {
                         font-family: 'DM Sans', sans-serif;
                         font-weight: 700;
@@ -931,7 +932,7 @@ header {
         .center-btn {
             margin-right: 20px;
             padding-bottom: 20px;
-            
+
             a {
                 text-align: center;
                 width: 90%;
@@ -942,7 +943,7 @@ header {
             display: block;
             align-items: center;
             text-align: center;
-            padding-top: 100px ;
+            padding-top: 100px;
             padding-bottom: 70px;
 
             .reviews {
@@ -965,7 +966,7 @@ header {
                         align-items: center;
                         padding-top: 20px;
                         padding-bottom: 70px;
-                        
+
                         img {
                             padding-right: 20px;
                         }
@@ -982,7 +983,7 @@ header {
         }
     }
 }
-// Subscribe button is broken at 992px->1400px
+
 .newsletter {
     background-color: #F0EFE9;
     position: relative;
@@ -991,7 +992,7 @@ header {
     img {
         position: absolute;
         display: none;
-        
+
         @media (min-width: 768px) {
             display: block;
             right: 0;
@@ -1069,7 +1070,7 @@ header {
         @media (min-width: 1400px) {
             .section-title {
                 margin-right: 120px;
-                
+
                 h2 {
                     font-size: 45px;
                 }
@@ -1083,8 +1084,11 @@ footer {
     color: #FFFFFF;
     position: relative;
     z-index: 0;
-        
+    padding-bottom: 40px;
+
     .container {
+        align-items: center;
+        padding-top: 40px;
 
         .wavy-line {
             position: absolute;
@@ -1093,40 +1097,59 @@ footer {
             bottom: 0;
         }
 
-        .top-bar {
+        .logotype {
+            
+
+            img {
+                padding-bottom: 40px;
+            }
+
+            p {
+                color: #c3c3c7;
+                padding-bottom: 20px;
+            }
+        }
+
+        .headlines {
+            align-items: center;
+            padding-bottom: 20px;
+
+            h3 {
+                font-family: 'DM Sans', sans-serif;
+                font-size: 22px;
+                font-weight: 700;
+            }
+
+            .footer-links {
+                display: block;
+
+                a {
+                    display: block;
+                    padding-top: 5px;
+                    color: #c3c3c7;
+                    text-decoration: none;
+                }
+            }
+        }
+
+        @media (min-width: 992px) {
             display: flex;
             justify-content: space-between;
-            align-items: center;
-            padding-top: 40px;
 
             .logotype {
                 flex: 0.5;
-
-                img {
-                    padding-bottom: 40px;
-                    margin-top: -50px;
-                }
-
-                p {
-                    color: #c3c3c7;
-                }
             }
-            
+
             .headlines {
-                align-items: center;
-                padding-bottom: 40px;
 
                 h3 {
-                    padding-bottom: 20px;
+                    padding-bottom: 10px;
                 }
-                .footer-links {
-                    display: block;
 
+                .footer-links {
+                    
                     a {
-                        display: block;
                         padding-top: 15px;
-                        color: #c3c3c7;
-                        text-decoration: none;
                     }
                 }
             }
@@ -1140,26 +1163,26 @@ footer {
     color: #c3c3c7;
 
     .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 30px;
-    padding-bottom: 25px;
-
-    .socialmedia-bar {
         display: flex;
+        justify-content: space-between;
         align-items: center;
+        padding-top: 30px;
+        padding-bottom: 25px;
 
-        a {
-            color: #FFFFFF;
-            font-size: 1.2rem;
-            margin-left: 12px;
+        .socialmedia-bar {
+            display: flex;
+            align-items: center;
 
-            &:hover {
-                color: #c3c3c7;
+            a {
+                color: #FFFFFF;
+                font-size: 1.2rem;
+                margin-left: 12px;
+
+                &:hover {
+                    color: #c3c3c7;
+                }
             }
         }
-    }
     }
 }
 
