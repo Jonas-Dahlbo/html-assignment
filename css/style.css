@@ -465,6 +465,14 @@ header .container .login {
   }
 }
 
+.about {
+  padding-top: 30px;
+}
+@media (min-width: 992px) {
+  .about {
+    padding-top: 70px;
+  }
+}
 .about .container {
   align-items: center;
   padding-left: 0;
@@ -857,7 +865,11 @@ header .container .login {
     margin-bottom: 80px;
   }
   .newsletter .container .section-title {
-    margin-right: 80px;
+    margin-right: 40px;
+  }
+  .newsletter .container .section-title h2 {
+    margin-top: 20px;
+    font-size: 30px;
   }
   .newsletter .container .newsletter-form form {
     display: flex;
@@ -875,6 +887,9 @@ header .container .login {
 @media (min-width: 1400px) {
   .newsletter .container .section-title {
     margin-right: 120px;
+  }
+  .newsletter .container .section-title h2 {
+    font-size: 45px;
   }
 }
 

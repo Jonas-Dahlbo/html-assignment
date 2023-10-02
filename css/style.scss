@@ -555,6 +555,11 @@ header {
 }
 
 .about {
+    padding-top: 30px;
+
+    @media (min-width: 992px) {
+        padding-top: 70px;
+    }
 
     .container {
         align-items: center;
@@ -813,7 +818,7 @@ header {
     @media (min-width: 992px) {
         padding-top: 80px;
     }
-    
+
     .container {
 
         .section-title {
@@ -1034,7 +1039,12 @@ header {
             margin-bottom: 80px;
 
             .section-title {
-                margin-right: 80px;
+                margin-right: 40px;
+
+                h2 {
+                    margin-top: 20px;
+                    font-size: 30px;
+                }
             }
 
             .newsletter-form {
@@ -1059,6 +1069,10 @@ header {
         @media (min-width: 1400px) {
             .section-title {
                 margin-right: 120px;
+                
+                h2 {
+                    font-size: 45px;
+                }
             }
         }
     }
