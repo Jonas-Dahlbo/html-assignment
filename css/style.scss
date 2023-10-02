@@ -808,6 +808,12 @@ header {
 }
 
 .project-and-case {
+    padding-top: 30px;
+    
+    @media (min-width: 992px) {
+        padding-top: 80px;
+    }
+    
     .container {
 
         .section-title {

@@ -669,6 +669,14 @@ header .container .login {
   }
 }
 
+.project-and-case {
+  padding-top: 30px;
+}
+@media (min-width: 992px) {
+  .project-and-case {
+    padding-top: 80px;
+  }
+}
 .project-and-case .container .section-title {
   text-align: center;
 }
