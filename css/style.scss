@@ -1007,6 +1007,36 @@ header {
     }
 }
 
+.our-team {
+    background-color: #F0D082;
+
+    .container {
+      padding-top: 30px;
+      padding-bottom: 30px;  
+      
+      .center-btn {
+        gap: 12px;
+
+        .active {
+            img {
+                content: url(/images/b-dot.svg);
+            }
+        }
+
+        #dot1,#dot2,#dot3,#dot4,#dot5 {
+            &:hover {
+                transition-duration: 0.25s;
+                transition-timing-function: ease-in-out;
+                cursor: pointer;
+                img {
+                    content: url(/images/b-dot.svg);
+                }
+            }
+        }
+      }
+    }
+}
+
 .testimonial {
     background-color: #F0D082;
 

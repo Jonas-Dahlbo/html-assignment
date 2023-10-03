@@ -847,6 +847,28 @@ header .container .login {
   }
 }
 
+.our-team {
+  background-color: #F0D082;
+}
+.our-team .container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.our-team .container .center-btn {
+  gap: 12px;
+}
+.our-team .container .center-btn .active img {
+  content: url(/images/b-dot.svg);
+}
+.our-team .container .center-btn #dot1:hover, .our-team .container .center-btn #dot2:hover, .our-team .container .center-btn #dot3:hover, .our-team .container .center-btn #dot4:hover, .our-team .container .center-btn #dot5:hover {
+  transition-duration: 0.25s;
+  transition-timing-function: ease-in-out;
+  cursor: pointer;
+}
+.our-team .container .center-btn #dot1:hover img, .our-team .container .center-btn #dot2:hover img, .our-team .container .center-btn #dot3:hover img, .our-team .container .center-btn #dot4:hover img, .our-team .container .center-btn #dot5:hover img {
+  content: url(/images/b-dot.svg);
+}
+
 .testimonial {
   background-color: #F0D082;
 }
