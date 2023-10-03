@@ -724,16 +724,16 @@ header {
         }
 
         .service-container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 50px;
             padding-bottom: 20px;
 
             .service-box {
                 background-color: #FFFFFF;
                 text-align: center;
                 padding-top: 20px;
+                padding-right: 20px;
+                padding-left: 20px;
                 padding-bottom: 10px;
+                margin: 20px 40px 20px;
                 position: relative;
 
                 h3 {
@@ -754,12 +754,26 @@ header {
 
                 &:hover {
                     background-color: #F9D783;
-                    transition-duration: 0.2s;
+                    transition-duration: 0.25s;
                     transition-timing-function: ease-in-out;
+                    cursor: pointer;
 
                     img {
                         content: url(/images/white-arrow.svg);
+                        cursor: pointer;
                     }
+                }
+            }
+
+            @media (min-width: 768px) {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 50px;
+
+                .service-box {
+                    padding-right: 0;
+                    padding-left: 0;
+                    margin: 0;
                 }
             }
 
@@ -799,9 +813,11 @@ header {
                     }
                     p {
                         font-size: 16px;
+                        padding-bottom: 40px;
                     }
 
                     img {
+                        all: initial;
                         position: absolute;
                         right: 25px;
                         bottom: 35px
