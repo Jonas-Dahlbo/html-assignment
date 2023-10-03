@@ -741,7 +741,18 @@ header {
                 }
                 
                 img {
-                    width: 25%;
+                    width: 50px;
+                    height: auto;
+                }
+
+                &:hover {
+                    background-color: #F9D783;
+                    transition-duration: 0.2s;
+                    transition-timing-function: ease-in-out;
+
+                    img {
+                        content: url(/images/white-arrow.svg);
+                    }
                 }
             }
 
