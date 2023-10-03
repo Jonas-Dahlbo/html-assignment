@@ -736,12 +736,19 @@ header {
                 padding-bottom: 10px;
                 position: relative;
 
+                h3 {
+                    font-family: 'DM Sans', sans-serif;
+                }
+
                 p {
                     color: #5E5E5E;
+                    font-family: 'Inter', sans-serif;
+                    font-size: 14px;
+                    font-weight: 400;
                 }
                 
                 img {
-                    width: 50px;
+                    width: 40px;
                     height: auto;
                 }
 
@@ -764,6 +771,42 @@ header {
                 position: absolute;
                 top: 10px;
                 left: 25px;
+
+                @media (min-width: 992px) {
+                    width: 40px;
+                    top: 40px;
+                }
+            }
+        }
+        
+        @media (min-width: 992px) {
+            padding-top: 70px;
+            padding-bottom: 70px;
+
+            .service-container {
+                display: flex;
+                gap: 15px;
+                padding-top: 40px;
+                padding-bottom: 40px;
+
+                .service-box {
+                    text-align: start;
+                    padding: 90px 25px 80px;
+                    position: relative;
+
+                    h3 {
+                        font-size: 22px;
+                    }
+                    p {
+                        font-size: 16px;
+                    }
+
+                    img {
+                        position: absolute;
+                        right: 25px;
+                        bottom: 35px
+                    }
+                }
             }
         }
     }

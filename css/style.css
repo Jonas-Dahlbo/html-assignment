@@ -619,11 +619,17 @@ header .container .login {
   padding-bottom: 10px;
   position: relative;
 }
+.our-services .container .service-container .service-box h3 {
+  font-family: "DM Sans", sans-serif;
+}
 .our-services .container .service-container .service-box p {
   color: #5E5E5E;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
 }
 .our-services .container .service-container .service-box img {
-  width: 50px;
+  width: 40px;
   height: auto;
 }
 .our-services .container .service-container .service-box:hover {
@@ -642,6 +648,40 @@ header .container .login {
   position: absolute;
   top: 10px;
   left: 25px;
+}
+@media (min-width: 992px) {
+  .our-services .container .service-container .service-box::after {
+    width: 40px;
+    top: 40px;
+  }
+}
+@media (min-width: 992px) {
+  .our-services .container {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .our-services .container .service-container {
+    display: flex;
+    gap: 15px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .our-services .container .service-container .service-box {
+    text-align: start;
+    padding: 90px 25px 80px;
+    position: relative;
+  }
+  .our-services .container .service-container .service-box h3 {
+    font-size: 22px;
+  }
+  .our-services .container .service-container .service-box p {
+    font-size: 16px;
+  }
+  .our-services .container .service-container .service-box img {
+    position: absolute;
+    right: 25px;
+    bottom: 35px;
+  }
 }
 
 .why-us {
