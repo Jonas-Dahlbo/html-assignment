@@ -20,6 +20,7 @@ body {
 
     @media (min-width: 992px) {
         padding-left: 90px;
+        padding-right: 60px;
     }
 }
 
@@ -288,7 +289,6 @@ header {
     }
 }
 
-// Might want to adjust wavy line to fixed sizes
 .showcase {
     background-color: #F0EFE9;
     position: relative;
@@ -303,8 +303,11 @@ header {
         z-index: -1;
 
         @media (min-width: 992px) {
-            width: 40%;
-            height: auto;
+            all: initial;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            z-index: -1;
         }
     }
 
@@ -357,7 +360,6 @@ header {
 
             @media (min-width: 992px) {
                 margin-left: 0;
-                margin-right: -10px;
                 margin-top: 10px;
                 padding-bottom: 120px;
 
@@ -494,7 +496,7 @@ header {
             @media (min-width: 1200px) {
 
                 h2 {
-                    margin-right: 90px;
+                    padding-right: 70px;
                 }
             }
         }
@@ -658,8 +660,8 @@ header {
                     }
 
                     .bluebox {
-                        width: 60%;
-                        bottom: 7%;
+                        width: 52.5%;
+                        bottom: 10%;
                         padding: 30px 30px 40px 20px;
                     }
                 }
@@ -715,12 +717,12 @@ header {
     background-color: #F0EFE9;
     padding-top: 20px;
     padding-bottom: 20px;
-    
+    position: relative;
+
     .container {
 
         .wavy-line {
             display: none;
-            transform: scaleX(-1);
         }
 
         .service-container {
@@ -797,6 +799,14 @@ header {
             padding-top: 70px;
             padding-bottom: 70px;
 
+            .wavy-line {
+                display: block;
+                transform: scaleX(-1);
+                position: absolute;
+                right: 0;
+                bottom: 0;
+            }
+
             .service-container {
                 display: flex;
                 gap: 15px;
@@ -831,7 +841,7 @@ header {
 .why-us {
     position: relative;
     z-index: 0;
-    padding-top: 20px;
+    padding-top: 40px;
 
     .container {
         display: block;
@@ -877,13 +887,14 @@ header {
 
         @media (min-width: 992px) {
             display: flex;
+            align-items: center;
 
             .section-title {
                 margin-left: 0;
                 margin-right: 0;
 
                 h2 {
-                    margin-right: 20px;
+                    padding-right: 100px;
                 }
 
 
@@ -896,7 +907,6 @@ header {
             .image-box {
                 display: flex;
                 margin-top: 0px;
-                margin-left: 120px;
 
                 img {
                     margin-top: 200px;
@@ -915,10 +925,14 @@ header {
                 }
 
                 @media (min-width: 1400px) {
+                    justify-content: space-between;
+                    margin-left: 0;
+                    padding-left: 90px;
 
                     img {
-                        all: initial;
-                        margin-top: -100px;
+                        width: 550px;
+                        height: auto;
+                        margin-top: -200px;
                     }
 
                     .grey-box {
@@ -1012,7 +1026,40 @@ header {
 
     .container {
       padding-top: 30px;
-      padding-bottom: 30px;  
+      padding-bottom: 30px; 
+      
+      @media (min-width: 992px) {
+        padding-top: 70px;
+        padding-bottom: 70px;
+      }
+
+      .team-members {
+        display: flex;
+        gap: 25px;
+        
+        .member {
+            padding-bottom: 40px;
+
+            h3 {
+                padding-top: 20px;
+            }
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+      }
+
+      .section-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .btn-yellow {
+            border: 1px solid #191919;
+        }
+      }
       
       .center-btn {
         gap: 12px;
@@ -1039,6 +1086,11 @@ header {
 
 .testimonial {
     background-color: #F0D082;
+    padding-bottom: 30px;
+
+    @media (min-width: 992px) {
+        padding-bottom: 100px;
+    }
 
     .container {
         background-color: #FFFFFF;
@@ -1097,7 +1149,7 @@ header {
             .reviews {
                 display: flex;
                 text-align: left;
-                padding-top: 80px;
+                padding-top: 50px;
 
                 .review-box {
 
@@ -1106,7 +1158,7 @@ header {
                     }
 
                     p {
-                        padding-right: 80px;
+                        padding-right: 60px;
                     }
 
                     .reviewer {
@@ -1136,6 +1188,13 @@ header {
     background-color: #F0EFE9;
     position: relative;
     z-index: 0;
+    padding-top: 30px;
+    padding-bottom: 20px;
+
+    @media (min-width: 992px) {
+        padding-top: 60px;
+        padding-bottom: 50px;
+    }
 
     img {
         position: absolute;
@@ -1184,11 +1243,8 @@ header {
         @media (min-width: 992px) {
             display: flex;
             align-items: center;
-            margin-top: 100px;
-            margin-bottom: 80px;
 
             .section-title {
-                margin-right: 40px;
 
                 h2 {
                     margin-top: 20px;
@@ -1217,7 +1273,7 @@ header {
 
         @media (min-width: 1400px) {
             .section-title {
-                margin-right: 120px;
+                margin-right: 85px;
 
                 h2 {
                     font-size: 45px;
