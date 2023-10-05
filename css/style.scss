@@ -452,6 +452,10 @@ header {
             img {
                 width: 100%;
                 height: auto;
+
+                &:hover {
+                    cursor: pointer;
+                }
             }
         }
     }
@@ -766,7 +770,7 @@ header {
                     cursor: pointer;
 
                     img {
-                        content: url(/images/white-arrow.svg);
+                        content: url(../images/white-arrow.svg);
                         cursor: pointer;
                     }
                 }
@@ -1140,7 +1144,7 @@ header {
                 }
 
                 .reviewer {
-                    margin-bottom: 5px;
+                    margin-bottom: 50px;
 
                     img {
                         margin-bottom: 5px;
@@ -1195,7 +1199,7 @@ header {
                         display: flex;
                         align-items: center;
                         padding-top: 20px;
-                        padding-bottom: 70px;
+                        padding-bottom: 40px;
 
                         img {
                             padding-right: 20px;
@@ -1205,7 +1209,7 @@ header {
             }
 
             .center-btn {
-
+                padding-bottom: 50px;
                 a {
                     width: auto;
                 }
@@ -1516,8 +1520,13 @@ footer {
     padding-bottom: 70px;
     
     .wavy-lines {
-        position: absolute;
-        z-index: -1;
+        display: none;
+
+        @media (min-width:992px) {
+            display: block;
+            position: absolute;
+            z-index: -1;
+        }
     }
 
     .container {
@@ -1527,10 +1536,20 @@ footer {
             margin-right: 15px;
             text-decoration: none;
             color: #191919;
+
+            &:hover {
+                text-decoration: underline;
+            }
         }
         
         h2 {
-            font-size: 56px;
+            font-size: 30px;
+        }
+
+        @media (min-width: 992px) {
+            h2 {
+                font-size: 56px;
+            }
         }
     }
 }
@@ -1547,16 +1566,17 @@ footer {
     }
 
     .container {
-        display: flex;
-        justify-content: space-between;
+        display: block;
         align-items: center;
-        gap: 20px;
 
         .contact {
             border: 1px solid #191919;
             display: flex;
             gap: 20px;
-            padding: 40px 100px 40px 40px;
+            padding-top: 20px;
+            padding-left: 20px;
+            margin-bottom: 15px;
+            
 
             h3 {
                 margin-top: 10px;
@@ -1569,6 +1589,18 @@ footer {
 
             img {
                 margin-bottom: 60px;
+            }
+        }
+
+        @media (min-width: 992px) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+
+            .contact {
+                margin-bottom: 0;
+                padding: 40px 100px 40px 40px;
             }
         }
     }
@@ -1586,7 +1618,11 @@ footer {
         display: block;
         align-items: center;
         text-align: center;
+        padding-top: 30px;
         
+        h2 {
+            padding-bottom: 20px;
+        }
 
         form {
                 padding-bottom: 30px;
@@ -1609,7 +1645,7 @@ footer {
                 font-size: 16;
                 font-weight: 400;
                 width: 90%;
-                margin-bottom: 45px;
+                margin-bottom: 40px;
                 padding: 12px 25px 11px;
                 border-radius: 25px;
                 border: none;
@@ -1622,10 +1658,10 @@ footer {
         }
 
         @media (min-width: 992px) {
+            padding-top: 0;
             
             h2 {
                 padding-top: 80px;
-                padding-bottom: 20px;
                 font-size: 45px;
             }
 
@@ -1635,4 +1671,9 @@ footer {
         }
 
     }
+}
+
+#map {
+    width: 100%;
+    height: auto;
 }

@@ -399,6 +399,9 @@ header .container .login {
   width: 100%;
   height: auto;
 }
+.partners .container .partner img:hover {
+  cursor: pointer;
+}
 @media (min-width: 992px) {
   .partners .container {
     display: flex;
@@ -655,7 +658,7 @@ header .container .login {
   cursor: pointer;
 }
 .our-services .container .service-container .service-box:hover img {
-  content: url(/images/white-arrow.svg);
+  content: url(../images/white-arrow.svg);
   cursor: pointer;
 }
 @media (min-width: 768px) {
@@ -972,7 +975,7 @@ header .container .login {
   font-style: italic;
 }
 .testimonial .container .reviews .review-box .reviewer {
-  margin-bottom: 5px;
+  margin-bottom: 50px;
 }
 .testimonial .container .reviews .review-box .reviewer img {
   margin-bottom: 5px;
@@ -1016,10 +1019,13 @@ header .container .login {
     display: flex;
     align-items: center;
     padding-top: 20px;
-    padding-bottom: 70px;
+    padding-bottom: 40px;
   }
   .testimonial .container .reviews .review-box .reviewer img {
     padding-right: 20px;
+  }
+  .testimonial .container .center-btn {
+    padding-bottom: 50px;
   }
   .testimonial .container .center-btn a {
     width: auto;
@@ -1267,8 +1273,14 @@ footer .container .headlines .footer-links a {
   padding-bottom: 70px;
 }
 .lets-connect .wavy-lines {
-  position: absolute;
-  z-index: -1;
+  display: none;
+}
+@media (min-width: 992px) {
+  .lets-connect .wavy-lines {
+    display: block;
+    position: absolute;
+    z-index: -1;
+  }
 }
 .lets-connect .container {
   text-align: center;
@@ -1278,8 +1290,16 @@ footer .container .headlines .footer-links a {
   text-decoration: none;
   color: #191919;
 }
+.lets-connect .container a:hover {
+  text-decoration: underline;
+}
 .lets-connect .container h2 {
-  font-size: 56px;
+  font-size: 30px;
+}
+@media (min-width: 992px) {
+  .lets-connect .container h2 {
+    font-size: 56px;
+  }
 }
 
 .contacts {
@@ -1295,16 +1315,16 @@ footer .container .headlines .footer-links a {
   }
 }
 .contacts .container {
-  display: flex;
-  justify-content: space-between;
+  display: block;
   align-items: center;
-  gap: 20px;
 }
 .contacts .container .contact {
   border: 1px solid #191919;
   display: flex;
   gap: 20px;
-  padding: 40px 100px 40px 40px;
+  padding-top: 20px;
+  padding-left: 20px;
+  margin-bottom: 15px;
 }
 .contacts .container .contact h3 {
   margin-top: 10px;
@@ -1315,6 +1335,18 @@ footer .container .headlines .footer-links a {
 }
 .contacts .container .contact img {
   margin-bottom: 60px;
+}
+@media (min-width: 992px) {
+  .contacts .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+  .contacts .container .contact {
+    margin-bottom: 0;
+    padding: 40px 100px 40px 40px;
+  }
 }
 
 .message {
@@ -1330,6 +1362,10 @@ footer .container .headlines .footer-links a {
   display: block;
   align-items: center;
   text-align: center;
+  padding-top: 30px;
+}
+.message .container h2 {
+  padding-bottom: 20px;
 }
 .message .container form {
   padding-bottom: 30px;
@@ -1351,7 +1387,7 @@ footer .container .headlines .footer-links a {
   font-size: 16;
   font-weight: 400;
   width: 90%;
-  margin-bottom: 45px;
+  margin-bottom: 40px;
   padding: 12px 25px 11px;
   border-radius: 25px;
   border: none;
@@ -1361,12 +1397,19 @@ footer .container .headlines .footer-links a {
   width: 90%;
 }
 @media (min-width: 992px) {
+  .message .container {
+    padding-top: 0;
+  }
   .message .container h2 {
     padding-top: 80px;
-    padding-bottom: 20px;
     font-size: 45px;
   }
   .message .container form {
     padding-bottom: 80px;
   }
+}
+
+#map {
+  width: 100%;
+  height: auto;
 }/*# sourceMappingURL=style.css.map */
