@@ -932,7 +932,7 @@ header .container .login {
   gap: 12px;
 }
 .our-team .container .center-btn .active img {
-  content: url(/images/b-dot.svg);
+  content: url(../images/b-dot.svg);
 }
 .our-team .container .center-btn #dot1:hover, .our-team .container .center-btn #dot2:hover, .our-team .container .center-btn #dot3:hover, .our-team .container .center-btn #dot4:hover, .our-team .container .center-btn #dot5:hover {
   transition-duration: 0.25s;
@@ -940,7 +940,7 @@ header .container .login {
   cursor: pointer;
 }
 .our-team .container .center-btn #dot1:hover img, .our-team .container .center-btn #dot2:hover img, .our-team .container .center-btn #dot3:hover img, .our-team .container .center-btn #dot4:hover img, .our-team .container .center-btn #dot5:hover img {
-  content: url(/images/b-dot.svg);
+  content: url(../images/b-dot.svg);
 }
 
 .testimonial {
@@ -1081,7 +1081,7 @@ header .container .login {
   gap: 12px;
 }
 .article-news .container .center-btn .active img {
-  content: url(/images/b-dot.svg);
+  content: url(../images/b-dot.svg);
 }
 .article-news .container .center-btn #dot1:hover, .article-news .container .center-btn #dot2:hover, .article-news .container .center-btn #dot3:hover, .article-news .container .center-btn #dot4:hover, .article-news .container .center-btn #dot5:hover {
   transition-duration: 0.25s;
@@ -1089,7 +1089,7 @@ header .container .login {
   cursor: pointer;
 }
 .article-news .container .center-btn #dot1:hover img, .article-news .container .center-btn #dot2:hover img, .article-news .container .center-btn #dot3:hover img, .article-news .container .center-btn #dot4:hover img, .article-news .container .center-btn #dot5:hover img {
-  content: url(/images/b-dot.svg);
+  content: url(../images/b-dot.svg);
 }
 
 .newsletter {

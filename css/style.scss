@@ -1088,7 +1088,7 @@ header {
 
         .active {
             img {
-                content: url(/images/b-dot.svg);
+                content: url(../images/b-dot.svg);
             }
         }
 
@@ -1098,7 +1098,7 @@ header {
                 transition-timing-function: ease-in-out;
                 cursor: pointer;
                 img {
-                    content: url(/images/b-dot.svg);
+                    content: url(../images/b-dot.svg);
                 }
             }
         }
@@ -1282,7 +1282,7 @@ header {
     
             .active {
                 img {
-                    content: url(/images/b-dot.svg);
+                    content: url(../images/b-dot.svg);
                 }
             }
     
@@ -1292,7 +1292,7 @@ header {
                     transition-timing-function: ease-in-out;
                     cursor: pointer;
                     img {
-                        content: url(/images/b-dot.svg);
+                        content: url(../images/b-dot.svg);
                     }
                 }
             }
