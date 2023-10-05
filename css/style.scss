@@ -10,6 +10,15 @@ body {
     font-weight: 400;
     line-height: 1.5;
 
+    h1,h2,h3 {
+        font-family: 'DM Sans', sans-serif;
+        font-weight: 700;
+
+        @media (min-width: 992px) {
+            font-size: 22px;
+        }
+    }
+
     @media (min-width: 1200px) {
         font-size: 16px;
     }
@@ -1035,7 +1044,13 @@ header {
 
       .team-members {
         display: flex;
-        gap: 25px;
+        gap: 5px;
+
+        @media (min-width: 992px) {
+            gap: 25px;
+            padding-top: 50px;
+        }
+
         
         .member {
             padding-bottom: 40px;
@@ -1044,6 +1059,9 @@ header {
                 padding-top: 20px;
             }
 
+            p {
+                font-size: 12px;
+            }
             img {
                 width: 100%;
                 height: auto;
@@ -1052,9 +1070,15 @@ header {
       }
 
       .section-title {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        display: block;
+        padding-bottom: 30px;
+        
+        @media (min-width: 992px) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 0;
+        }
 
         .btn-yellow {
             border: 1px solid #191919;
@@ -1095,6 +1119,14 @@ header {
     .container {
         background-color: #FFFFFF;
         align-items: center;
+
+        .section-title {
+            padding-top: 30px;
+
+            @media (min-width: 992px) {
+                padding-top: 0;
+            }
+        }
 
         .reviews {
 
@@ -1186,6 +1218,88 @@ header {
 
 .article-news {
 
+    .container {
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+        @media (min-width: 992px) {
+            padding-top: 90px;
+            padding-bottom: 70px;
+        }
+
+        .section-title {
+            display: block;
+            align-items: center;
+            padding-bottom: 30px;
+
+            .btn-transparent {
+                background-color: white;
+                
+                &:hover {
+                    background-color: #191919;
+                    color: #F0EFE9;
+                }
+            }
+
+            @media (min-width: 992px) {
+                display: flex;
+                justify-content: space-between;
+                padding-bottom: 0;
+            }
+        }
+
+        .article-box {
+            align-items: center;
+        
+            p {
+                color: #5E5E5E;
+                padding-top: 10px;
+            }
+
+            .article {
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            @media (min-width: 992px) {
+                display: flex;
+                justify-content: space-between;
+                gap: 30px;
+                margin-bottom: 25px;
+                
+                .article {
+
+                    img {
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+
+        .center-btn {
+            padding-top: 5px;
+            gap: 12px;
+    
+            .active {
+                img {
+                    content: url(/images/b-dot.svg);
+                }
+            }
+    
+            #dot1,#dot2,#dot3,#dot4,#dot5 {
+                &:hover {
+                    transition-duration: 0.25s;
+                    transition-timing-function: ease-in-out;
+                    cursor: pointer;
+                    img {
+                        content: url(/images/b-dot.svg);
+                    }
+                }
+            }
+          }
+    }
 }
 
 .newsletter {
