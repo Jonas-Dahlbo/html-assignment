@@ -1257,4 +1257,116 @@ footer .container .headlines .footer-links a {
 }
 .copyright-bar .container .socialmedia-bar a:hover {
   color: #c3c3c7;
+}
+
+.lets-connect {
+  position: relative;
+  z-index: 0;
+  background-color: #F0EFE9;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.lets-connect .wavy-lines {
+  position: absolute;
+  z-index: -1;
+}
+.lets-connect .container {
+  text-align: center;
+}
+.lets-connect .container a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: #191919;
+}
+.lets-connect .container h2 {
+  font-size: 56px;
+}
+
+.contacts {
+  position: relative;
+  z-index: 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+@media (min-width: 992px) {
+  .contacts {
+    padding-top: 100px;
+    padding-bottom: 70px;
+  }
+}
+.contacts .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.contacts .container .contact {
+  border: 1px solid #191919;
+  display: flex;
+  gap: 20px;
+  padding: 40px 100px 40px 40px;
+}
+.contacts .container .contact h3 {
+  margin-top: 10px;
+  padding-bottom: 15px;
+}
+.contacts .container .contact p {
+  color: #5E5E5E;
+}
+.contacts .container .contact img {
+  margin-bottom: 60px;
+}
+
+.message {
+  padding-bottom: 30px;
+}
+@media (min-width: 992px) {
+  .message {
+    padding-bottom: 100px;
+  }
+}
+.message .container {
+  background-color: #F0EFE9;
+  display: block;
+  align-items: center;
+  text-align: center;
+}
+.message .container form {
+  padding-bottom: 30px;
+}
+.message .container form input {
+  color: #8C8C8C;
+  font-family: "Inter", sans-serif;
+  font-size: 16;
+  font-weight: 400;
+  width: 90%;
+  margin-bottom: 12px;
+  padding: 12px 25px 11px;
+  border-radius: 25px;
+  border: none;
+}
+.message .container form textarea {
+  color: #8C8C8C;
+  font-family: "Inter", sans-serif;
+  font-size: 16;
+  font-weight: 400;
+  width: 90%;
+  margin-bottom: 45px;
+  padding: 12px 25px 11px;
+  border-radius: 25px;
+  border: none;
+  resize: none;
+}
+.message .container form button {
+  width: 90%;
+}
+@media (min-width: 992px) {
+  .message .container h2 {
+    padding-top: 80px;
+    padding-bottom: 20px;
+    font-size: 45px;
+  }
+  .message .container form {
+    padding-bottom: 80px;
+  }
 }/*# sourceMappingURL=style.css.map */
