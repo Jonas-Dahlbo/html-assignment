@@ -561,6 +561,12 @@ header .container .login {
   color: #191919;
   text-decoration: none;
 }
+.about .container .section-title .video-btn a:hover {
+  cursor: pointer;
+}
+.about .container .section-title .video-btn a:hover img {
+  filter: invert(0.4);
+}
 @media (min-width: 992px) {
   .about .container {
     display: grid;

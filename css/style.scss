@@ -559,7 +559,7 @@ header {
             }
 
             .features-box {
-                flex: 1.2; //size compared to .section-title
+                flex: 1.2; 
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 margin-top: 75px;
@@ -649,6 +649,14 @@ header {
                     margin-right: 10px;
                     color: #191919;
                     text-decoration: none;
+                    
+                    &:hover {
+                        cursor: pointer;
+                        
+                        img {
+                            filter: invert(0.40);
+                        }
+                    }
                 }
 
             }
@@ -704,7 +712,6 @@ header {
                         }
 
                         .video-btn {
-                            // display: inline;
                             text-align: left;
                             justify-content: left;
 
