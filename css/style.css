@@ -296,6 +296,11 @@ header .container .login {
 .showcase .container {
   display: block;
 }
+@media (min-width: 992px) {
+  .showcase .container {
+    padding-top: 40px;
+  }
+}
 .showcase .container .content h1 {
   font-family: "DM Sans", sans-serif;
   font-weight: 700;
@@ -332,10 +337,10 @@ header .container .login {
   .showcase .container .content {
     margin-left: 0;
     margin-top: 10px;
-    padding-bottom: 120px;
+    padding-bottom: 80px;
   }
   .showcase .container .content h1 {
-    line-height: 1.2;
+    line-height: 1;
     padding-bottom: 10px;
   }
   .showcase .container .content p {
@@ -355,7 +360,8 @@ header .container .login {
 }
 @media (min-width: 1400px) {
   .showcase .container .content h1 {
-    font-size: 85px;
+    padding: 20px;
+    font-size: 83px;
   }
 }
 .showcase .container img {
@@ -382,8 +388,9 @@ header .container .login {
     gap: 25px;
   }
   .showcase .container img {
-    all: initial;
-    margin-left: 20px;
+    width: 100%;
+    height: auto;
+    margin-left: 0px;
     margin-right: -40px;
   }
 }
@@ -561,11 +568,15 @@ header .container .login {
   color: #191919;
   text-decoration: none;
 }
+.about .container .section-title .video-btn a img {
+  margin-right: 10px;
+}
 .about .container .section-title .video-btn a:hover {
   cursor: pointer;
+  text-decoration: underline;
 }
 .about .container .section-title .video-btn a:hover img {
-  transition-duration: 0.2s;
+  transition-duration: 0.15s;
   transition-timing-function: ease-in-out;
   filter: invert(0.4);
 }
