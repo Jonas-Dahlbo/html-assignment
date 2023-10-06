@@ -654,6 +654,8 @@ header {
                         cursor: pointer;
                         
                         img {
+                            transition-duration: 0.2s;
+                            transition-timing-function: ease-in-out;
                             filter: invert(0.40);
                         }
                     }
@@ -772,7 +774,7 @@ header {
 
                 &:hover {
                     background-color: #F9D783;
-                    transition-duration: 0.25s;
+                    transition-duration: 0.2s;
                     transition-timing-function: ease-in-out;
                     cursor: pointer;
 
@@ -1454,11 +1456,14 @@ footer {
             .footer-links {
                 display: block;
 
-                a {
+                .footer-link {
                     display: block;
-                    padding-top: 5px;
-                    color: #c3c3c7;
-                    text-decoration: none;
+                    padding-top: 5px;                    
+
+                    a {
+                        color: #c3c3c7;
+                        text-decoration: none;
+                    }
                 }
             }
         }
@@ -1466,6 +1471,7 @@ footer {
         @media (min-width: 992px) {
             display: flex;
             justify-content: space-between;
+            padding-top: 80px;
 
             .logotype {
                 flex: 0.5;
@@ -1474,12 +1480,12 @@ footer {
             .headlines {
 
                 h3 {
-                    padding-bottom: 10px;
+                    padding-bottom: 15px;
                 }
 
                 .footer-links {
                     
-                    a {
+                    .footer-link {
                         padding-top: 15px;
                     }
                 }

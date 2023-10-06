@@ -565,6 +565,8 @@ header .container .login {
   cursor: pointer;
 }
 .about .container .section-title .video-btn a:hover img {
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
   filter: invert(0.4);
 }
 @media (min-width: 992px) {
@@ -659,7 +661,7 @@ header .container .login {
 }
 .our-services .container .service-container .service-box:hover {
   background-color: #F9D783;
-  transition-duration: 0.25s;
+  transition-duration: 0.2s;
   transition-timing-function: ease-in-out;
   cursor: pointer;
 }
@@ -1224,9 +1226,11 @@ footer .container .headlines h3 {
 footer .container .headlines .footer-links {
   display: block;
 }
-footer .container .headlines .footer-links a {
+footer .container .headlines .footer-links .footer-link {
   display: block;
   padding-top: 5px;
+}
+footer .container .headlines .footer-links .footer-link a {
   color: #c3c3c7;
   text-decoration: none;
 }
@@ -1234,14 +1238,15 @@ footer .container .headlines .footer-links a {
   footer .container {
     display: flex;
     justify-content: space-between;
+    padding-top: 80px;
   }
   footer .container .logotype {
     flex: 0.5;
   }
   footer .container .headlines h3 {
-    padding-bottom: 10px;
+    padding-bottom: 15px;
   }
-  footer .container .headlines .footer-links a {
+  footer .container .headlines .footer-links .footer-link {
     padding-top: 15px;
   }
 }
