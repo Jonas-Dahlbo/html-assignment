@@ -1272,18 +1272,23 @@ header {
 
         .article-box {
             align-items: center;
-        
-            p {
-                color: #5E5E5E;
-                padding-top: 10px;
-            }
+    
+                .article {
 
-            .article {
+                    a {
+                        text-decoration: none;
+                        color: #191919;
+                        
+                        p {
+                            color: #5E5E5E;
+                            padding-top: 10px;
+                        }
 
-                img {
-                    width: 100%;
+                        img {
+                            width: 100%;
+                        }
+                    }
                 }
-            }
 
             @media (min-width: 992px) {
                 display: flex;
@@ -1293,8 +1298,10 @@ header {
                 
                 .article {
 
-                    img {
-                        margin-bottom: 10px;
+                    a {
+                        img {
+                            margin-bottom: 10px;
+                        }
                     }
                 }
             }

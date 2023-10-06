@@ -1083,11 +1083,15 @@ header .container .login {
 .article-news .container .article-box {
   align-items: center;
 }
-.article-news .container .article-box p {
+.article-news .container .article-box .article a {
+  text-decoration: none;
+  color: #191919;
+}
+.article-news .container .article-box .article a p {
   color: #5E5E5E;
   padding-top: 10px;
 }
-.article-news .container .article-box .article img {
+.article-news .container .article-box .article a img {
   width: 100%;
 }
 @media (min-width: 992px) {
@@ -1097,7 +1101,7 @@ header .container .login {
     gap: 30px;
     margin-bottom: 25px;
   }
-  .article-news .container .article-box .article img {
+  .article-news .container .article-box .article a img {
     margin-bottom: 10px;
   }
 }
